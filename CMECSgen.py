@@ -10,7 +10,7 @@ arcpy.env.workspace = 'C:/Users/chris.clement/CMECS'
 #Make a feature layer to work on
 arcpy.MakeFeatureLayer_management("Guam_2005test","Guam_2005_CM")
 
-# Add Fields
+# Add Fields (will be adding many more fields for the cross walk but just getting this part to work for now).
 arcpy.AddField_management("Guam_2005_CM",
                           "MCOV_CM",
                           "TEXT",
